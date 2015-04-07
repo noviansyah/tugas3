@@ -11,7 +11,10 @@ package com.company;
         }
 
         public static int average(int n1, int n2, int n3) {  // C
-            return (n1+n2+n3)/3;
+            return (n1 + n2 + n3) / 3;
+        }
+        public static int average(int n1, int n2, int n3,int n4){
+            return (n1 +n2 +n3 +n4 ) / 4;
         }
 
         public static void main(String[] args) {
@@ -19,6 +22,6 @@ package com.company;
             System.out.println(average(1.0, 2.0)); // Use B
             System.out.println(average(1, 2, 3));  // Use C
             System.out.println(average(1.0, 2));   // Use B - int 2 implicitly casted to double 2.0
-            // average(1, 2, 3, 4); // Compilation Error - No matching method
+            System.out.println(average(1, 2, 3, 4));// average(1, 2, 3, 4); // Compilation Error - No matching method
         }
     }
